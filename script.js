@@ -338,7 +338,7 @@ function buttonRandom()
         if(card==='A')
         {
               //if adding 11 keeps me below 21, add 11, otherwise, add 1
-              if(activePlayer['score']+blackjackgame['cardsMap'][card[1]<=21])
+              if(activePlayer['score']+blackjackgame['cardsMap'][card][1]<=21)
                  {
                      activePlayer['score']+=blackjackgame['cardsMap'][card][1];
                  }
