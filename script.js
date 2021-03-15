@@ -456,20 +456,20 @@ function buttonRandom()
        {
         if(winner===YOU)
         {   document.querySelector('#win').textContent=blackjackgame['win'];
-            message='축하합니다!!';
+            message='YOU WIN!!';
             messagecolor='green';
             winSound.play();
         }
         else if(winner===DEALER)
         {
          document.querySelector('#losses').textContent=blackjackgame['losses'];
-         message='아이구~';
+         message='YOU LOSE!';
          messagecolor='red';
          loseSound.play();
         }
         else{
          document.querySelector('#draw').textContent=blackjackgame['draw'];
-         message='its DRAW!';
+         message='ITS A DRAW!';
          messagecolor='black';
         
         }
