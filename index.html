@@ -1,13 +1,15 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>MINI GAME BY FELICIA </title>
 </head>
+
 <body>
-<!--body>
+    <!--body>
     <div class="container1">
     <h2>Challenge 1: Your Age in Days</h2>
 <div class="flex-box-container-1">
@@ -39,7 +41,7 @@
 
 </div-->
 
-<div class="container3">
+    <!-- <div class="container3">
     <h2>GAME 1: Rock,Paper Scissors</h2>
 
     <div class="flex-box-rps" id="flex-box-rps-div">
@@ -49,9 +51,9 @@
         
     </div>
 
-</div>
+</div> -->
 
-<div class="container4">
+    <!-- <div class="container4">
 <h2>Change the Color of All Buttons!</h2>
 <div class="flex-box-pick-color">
     <form action=""> 
@@ -72,62 +74,72 @@
 
 </div>
 
-</div>
+</div> -->
 
-<div class="container5">
-    <h2>GAME 2: BlackJack</h2>
-<h3><span id="blackjack-result">Let's Play</span></h3>
+    <div class="container5">
 
-<div class="flex-blackjack-row-1">
-    <div id="your-box">
-        <h2>You: <span id="your-blackjack-result">0</span></h2>
-    </div>
+        <div class="popup-download" id="popup-download" name="popup-download">
+            <div class="popup-content" id="popup-content" name="popup-content">
+                <div class="row" style="align-items: center; justify-content: center;">
+                    <button class="close-button" id="close-button">&times;</button>
+                    <div class="col-12 "
+                        style="display:flex; flex-direction:column; text-align:justify; margin-left:10px">
+                        <h5>GAME RULE:</h5>
+                        <div class="wrapper">
+                            <span style="font-weight:300;  font-size:15px;line-height:15px; ">PRESS   <button class="btn" style="color: #fff;background-color: #027bff;border: 1px solid black;">Hit</button> TO ADD CARDS </span><br>
+                            <span style="font-weight:300;  font-size:15px;line-height:15px;">PRESS  <button class="btn" style="color: #000;background-color: #ffc008;border: 1px solid black;">Stand</button>  TO CONTINUE </span><br>
+                            <span style="font-weight:300;   font-size:15px;line-height:15px;">PRESS  <button class="btn" style="color: #fff;background-color: #dc3545;border: 1px solid black;" >Deal</button> TO RESET THE GAME
+                            </span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="font-style: italic;">BlackJack Game Created by Feli</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
 
-    <div id="dealer-box">
-        <h2>Dealer :<span id="dealer-blackjack-result">0</span></h2>
-    </div>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
 
-</div>
-<div class="flex-blackjack-row-2">
-<div>
-      <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
-      <button class="btn-lg btn-warning mr-2"id="blackjack-stand-button">Stand</button>
-      <button class="btn-lg btn-danger"id="blackjack-deal-button">Deal</button>
-    
-</div>
+            <div id="dealer-box">
+                <h2>Dealer :<span id="dealer-blackjack-result">0</span></h2>
+            </div>
 
-</div>
-<div class="flex-blackjack-row-3">
-   <table>
-       <tr>
-           <th>Win</th>
-           <th>Losses</th>
-           <th>Draws</th>
-       </tr>
-       <tr>
-           <td><span id="win">0</span></td>
-           <td><span id="losses">0</span></td>
-           <td><span id="draw">0</span></td>
-       </tr>
-   </table>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
 
-   <table>
-    <tr>
-        <th colspan="3">GAME RULE</th>
-    </tr>
-    <tr>
-        <td style="color: aqua; font-weight: bold;">PRESS HIT TO ADD CARDS</td>
-        <td style="color: yellow; font-weight: bold;">PRESS STAND TO CONTINUE</td>
-        <td style="color: red; font-weight: bold;" >PRESS DEAL TO RESET THE GAME</td>
+            </div>
 
-    </tr>
-   </table>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table style="margin-bottom: 10px;">
+                <tr>
+                    <th>Win</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="win">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draw">0</span></td>
+                </tr>
+            </table>
 
-    
-</div>
-   
+         
 
-    <script src="script.js">
-    </script> 
+
+        </div>
+
+
+        <script src="script.js">
+        </script>
 </body>
+
 </html>

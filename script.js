@@ -481,6 +481,15 @@ function buttonRandom()
    }
 
 
+   document.addEventListener('DOMContentLoaded', function() {
+    var popupDownload = document.querySelector('.popup-download');
+    popupDownload.style.display = 'block';
+  });
+
+  document.querySelector('.close-button').addEventListener('click', function() {
+    var popupDownload = document.querySelector('.popup-download');
+    popupDownload.style.display = 'none';
+  });
 
    
    
