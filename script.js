@@ -286,7 +286,7 @@ function buttonRandom()
         if(activePlayer['score']<=21)
         {
             let cardImage=document.createElement('img');
-            cardImage.src=`images/${card}.png`;
+            cardImage.src=`images/${card}.svg`;
             document.querySelector(activePlayer['div']).appendChild(cardImage);
             hitSound.play();
         }
@@ -320,10 +320,10 @@ function buttonRandom()
         DEALER['score']=0;
 
         document.querySelector('#your-blackjack-result').textContent=0;
-        document.querySelector('#your-blackjack-result').style.color='white';
+        document.querySelector('#your-blackjack-result').style.color='black';
 
         document.querySelector('#dealer-blackjack-result').textContent=0;
-        document.querySelector('#dealer-blackjack-result').style.color='white';
+        document.querySelector('#dealer-blackjack-result').style.color='black';
 
         document.querySelector('#blackjack-result').textContent="Let's Play";
         document.querySelector('#blackjack-result').style.color='black';

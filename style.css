@@ -193,6 +193,23 @@ table,th,td{
       align-items: left;
     justify-content: left;
     }
+
+    .flex-blackjack-row-1 div{
+        border: 1px solid black;
+        padding: 10px;
+        height: 350px;
+        text-align: center;
+        flex: 1;
+    
+    }
+    
+    .flex-blackjack-row-1 img{
+    
+        width: 50%;
+        padding:10px;
+       
+        
+    }
   }
 
 @keyframes slide-bottom {
